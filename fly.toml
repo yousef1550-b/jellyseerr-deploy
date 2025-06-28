@@ -1,0 +1,11 @@
+app = "jellyseerr-app"
+primary_region = "iad"
+
+[build]
+  image = "node:18-alpine"
+
+[env]
+  PORT = "3000"
+
+[deploy]
+  release_command = "npm run build"
